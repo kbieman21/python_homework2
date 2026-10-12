@@ -58,9 +58,10 @@ data_type_conversion("str", "float")
 
 
 #Task 5 Grading System, Using *args
-def grade(score1, score2, score3):
+#correction to def grade(score1, score2, score3):
+def grade(*args):
     try:
-        average = (score1 + score2 + score3) / 3
+        average = sum(args) / len(args)
         if average >= 90:
             return "A"
         elif average >= 80:
