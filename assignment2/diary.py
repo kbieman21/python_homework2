@@ -11,10 +11,10 @@ try:
 
         while True:
             if first_prompt:
-                response = input("What happened today?")
+                response = input("What happened today? ")
                 first_prompt = False
             else:
-                response = input("What else ")
+                response = input("What else? ")
 
            
          # Write the input to the file with a newline
